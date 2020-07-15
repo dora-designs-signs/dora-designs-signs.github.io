@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://dora-designs-signs.github.io/blog/</loc>
+    <loc>https://dora-designs-signs.github.io/blog_missing/</loc>
     <lastmod>2015-10-02T21:49:20+02:00</lastmod>
   </url>
   
@@ -28,7 +28,7 @@
   </url>
   
   <url>
-    <loc>https://dora-designs-signs.github.io/blog/2015/10/02/linked-post/</loc>
+    <loc>https://dora-designs-signs.github.io/blog_missing/linked-post/</loc>
     <lastmod>2015-10-02T21:49:20+02:00</lastmod>
   </url>
   
@@ -58,12 +58,12 @@
   </url>
   
   <url>
-    <loc>https://dora-designs-signs.github.io/blog/2015/09/17/go-is-for-lovers/</loc>
+    <loc>https://dora-designs-signs.github.io/blog_missing/go-is-for-lovers/</loc>
     <lastmod>2015-09-17T13:47:08+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dora-designs-signs.github.io/blog/2015/08/03/hugo-is-for-lovers/</loc>
+    <loc>https://dora-designs-signs.github.io/blog_missing/hugo-is-for-lovers/</loc>
     <lastmod>2015-08-03T13:39:46+02:00</lastmod>
   </url>
   
@@ -73,7 +73,7 @@
   </url>
   
   <url>
-    <loc>https://dora-designs-signs.github.io/blog/2015/06/24/creating-a-new-theme/</loc>
+    <loc>https://dora-designs-signs.github.io/blog_missing/creating-a-new-theme/</loc>
     <lastmod>2015-06-24T13:50:46+02:00</lastmod>
   </url>
   
@@ -99,7 +99,7 @@
   </url>
   
   <url>
-    <loc>https://dora-designs-signs.github.io/blog/1/01/01/migrate-from-jekyll/</loc>
+    <loc>https://dora-designs-signs.github.io/blog_missing/migrate-from-jekyll/</loc>
   </url>
   
 </urlset>
