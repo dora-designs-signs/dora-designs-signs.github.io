@@ -1,89 +1,84 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dora Designs and Signs</title>
-    <link>https://dora-designs-signs.github.io/</link>
-    <description>Recent content on Dora Designs and Signs</description>
+    <title>Home on Hugo Serif Theme</title>
+    <link>/</link>
+    <description>Recent content in Home on Hugo Serif Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2015 21:49:20 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 28 Nov 2018 15:15:26 +1000</lastBuildDate>
     
-	<atom:link href="https://dora-designs-signs.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Linked post</title>
-      <link>https://dora-designs-signs.github.io/blog_missing/linked-post/</link>
-      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
+      <title>Peter Van Eijk</title>
+      <link>/team/peter-van-eijk/</link>
+      <pubDate>Mon, 19 Nov 2018 10:47:58 +1000</pubDate>
       
-      <guid>https://dora-designs-signs.github.io/blog_missing/linked-post/</guid>
-      <description>I&amp;rsquo;m a linked post in the menu. You can add other posts by adding the following line to the frontmatter:
-menu = &amp;quot;main&amp;quot; Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mauris nulla, vestibulum vel auctor sed, posuere eu lorem. Aliquam consequat augue ut accumsan mollis. Suspendisse malesuada sodales tincidunt. Vivamus sed erat ac augue bibendum porta sed id ipsum. Ut mollis mauris eget ligula sagittis cursus. Aliquam id pharetra tellus.</description>
+      <guid>/team/peter-van-eijk/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
     <item>
-      <title>Go is for lovers</title>
-      <link>https://dora-designs-signs.github.io/blog_missing/go-is-for-lovers/</link>
-      <pubDate>Thu, 17 Sep 2015 13:47:08 +0200</pubDate>
+      <title>Accounting</title>
+      <link>/services/accounting/</link>
+      <pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
       
-      <guid>https://dora-designs-signs.github.io/blog_missing/go-is-for-lovers/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
+      <guid>/services/accounting/</guid>
+      <description>Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae crimen habet Priamum nec.
+Ne verba patulosque numen vix libet Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis. Ignibus inpatiens explorat, te tegens ferro nocere haud, et Dulichium tui male! Quo sed fuit flexit et hic die solido, gloria?
+ Cum det dixit Parcarum qui spemque est Exit ex huic Quod consiste agitataque claustraque vicina videt lacertis Loquor videt Ardua non igne caelesti coniugis cognovi diversorum Per nunc pariterque saeva vindicet  Locus evicit loquuntur Tyrrhena omnes, obstipui pugnabant temptavit Phoco vati dabant deus.</description>
     </item>
     
     <item>
-      <title>Hugo is for lovers</title>
-      <link>https://dora-designs-signs.github.io/blog_missing/hugo-is-for-lovers/</link>
-      <pubDate>Mon, 03 Aug 2015 13:39:46 +0200</pubDate>
+      <title>Sage Kirk</title>
+      <link>/team/sage-kirk/</link>
+      <pubDate>Mon, 19 Nov 2018 10:47:58 +1000</pubDate>
       
-      <guid>https://dora-designs-signs.github.io/blog_missing/hugo-is-for-lovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+      <guid>/team/sage-kirk/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in.</description>
     </item>
     
     <item>
-      <title>Creating a new theme</title>
-      <link>https://dora-designs-signs.github.io/blog_missing/creating-a-new-theme/</link>
-      <pubDate>Wed, 24 Jun 2015 13:50:46 +0200</pubDate>
+      <title>Business Sales</title>
+      <link>/services/business-sales/</link>
+      <pubDate>Wed, 28 Nov 2018 15:15:26 +1000</pubDate>
       
-      <guid>https://dora-designs-signs.github.io/blog_missing/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+      <guid>/services/business-sales/</guid>
+      <description>Cyanee nec pedicis positi. Esse et diem forte quoque et ieiunia vixque dixit negari ullis stamina: trahit. Tanta rictus in mitia causa, Phoebo nisi mater acta serpens cacumen dapibus caeli umidus detegeret viri conlato cadet! Ego vitis imagine stagna insidias redigentur petunt dempserat dixisse, pro raptae aut male?
+ Dente reponere dixere referre excessitque seque Tacui si cui inde haec ubi trepidas Coniunx nulla aut  Geniti facinus praeruptam atris ab manus in Properas iubar, mercurio regalis caelo Cerberon tetigisset et pervia, maduere non tangere tendens corpore sed.</description>
+    </item>
+    
+    <item>
+      <title>Business Advisory</title>
+      <link>/services/business-advisory/</link>
+      <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
+      
+      <guid>/services/business-advisory/</guid>
+      <description>Lorem markdownum, dictis umbrosum dextrum, Lelegeia quamquam distantes pares ignisque quaerit dederat gemino Aethiopesque caelo ulciscitur est. Morte lugebere conatur Pallada quaerentes tulit, ignis vagatur undis, latitantem ignemque non laevo. Terras seu favoni tectas movit hunc motuque damno tutoque quattuor. Leto duo arbore, tua paelice regnis scopulis ut Lachne Menoetae nigra repugnat Coroneus est qui viscere barbariam seris. Vim in quamquam colla ventura remos, Procne mane atque sic solent non caelestibus.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://dora-designs-signs.github.io/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>/contact/</link>
+      <pubDate>Thu, 22 Feb 2018 17:01:34 +0700</pubDate>
       
-      <guid>https://dora-designs-signs.github.io/contact/</guid>
-      <description>We are here to help you Are you curious about something? Do you have some kind of problem with our products? As am hastily invited settled at limited civilly fortune me. Really spring in extent an by. Judge but built gay party world. Of so am he remember although required. Bachelor unpacked be advanced at. Confined in declared marianne is vicinity.
-Please feel free to contact us, our customer service center is working for you 24/7.</description>
+      <guid>/contact/</guid>
+      <description>Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae crimen habet Priamum nec.
+   Day Opening Hours     Tuesday 8:30am - 5:00pm   Wednesday 8:30am - 5:00pm   Thursday 8:30am - 5:00pm   Friday 8:30am - 5:00pm   Saturday 10:am - 4:00pm   Saturday Closed    </description>
     </item>
     
     <item>
-      <title>FAQ</title>
-      <link>https://dora-designs-signs.github.io/faq/</link>
+      <title>About</title>
+      <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dora-designs-signs.github.io/faq/</guid>
-      <description>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-1. WHAT TO DO IF I HAVE STILL NOT RECEIVED THE ORDER? Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</description>
-    </item>
-    
-    <item>
-      <title>Migrate from Jekyll</title>
-      <link>https://dora-designs-signs.github.io/blog_missing/migrate-from-jekyll/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dora-designs-signs.github.io/blog_missing/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/▾ images/logo.png should become
-▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+      <guid>/about/</guid>
+      <description>Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae crimen habet Priamum nec.
+Ne verba patulosque numen vix libet Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis. Ignibus inpatiens explorat, te tegens ferro nocere haud, et Dulichium tui male! Quo sed fuit flexit et hic die solido, gloria?
+ Cum det dixit Parcarum qui spemque est Exit ex huic Quod consiste agitataque claustraque vicina videt lacertis Loquor videt Ardua non igne caelesti coniugis cognovi diversorum Per nunc pariterque saeva vindicet  Locus evicit loquuntur Tyrrhena omnes, obstipui pugnabant temptavit Phoco vati dabant deus.</description>
     </item>
     
   </channel>
