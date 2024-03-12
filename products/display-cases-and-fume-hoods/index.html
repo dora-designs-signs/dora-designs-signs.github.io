@@ -28,7 +28,7 @@
 
 </head>
 
-<body class='page page-default-single'>
+<body class='page page-services-single'>
   
 
 
@@ -132,18 +132,71 @@
 
     
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
-      <div class="service service-single">
-        <h1 class="title">Display Cases / Fume Hoods</h1>
-        <div class="content"><p><img src="../../images/Fume_Hoods_Display_Cases.png" alt="Example image"></p>
+    <div class="row justify-content-start">
+        <div class="col-12 col-md-8">
+            <div class="service service-single">
+                <h1 class="title">Display Cases / Fume Hoods</h1>
+                <div class="content"><p><img src="../../images/Fume_Hoods_Display_Cases.png" alt="Example image"></p>
 <p>Clear or colored fume and dust hoods for Laboratory or testing environments. Bases or feet can be added for your application.
 Display stands and cases for valuables, artwork, POS, Collectibles, etc.</p>
 </div>
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+
+    
+
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () { 
+        var base_url = window.location.pathname.split("/")[window.location.pathname.split("/").length-2];
+        
+        
+        if (base_url == 'accounting') {
+            $('#accounting').show();
+        }
+        
+        else if (base_url == 'business-sales') {
+            $('#business-sales').show();
+        }
+        
+        else if (base_url == 'business-advisory') {
+            $('#business-advisory').show();
+        }
+        
+        else {
+            $('#default-content').show();
+        }
+    });
+
+     
+    $(function () {
+        $(":file").change(function () {
+            if (this.files && this.files[0]) {
+                var reader = new FileReader();
+                reader.onload = imageIsLoaded;
+                reader.readAsDataURL(this.files[0]);
+            }
+
+        });
+    });
+
+    function myFunction() {
+                            var img = document.getElementById('myImg'); 
+            alert(img.naturalWidth * img.naturalHeight) 
+            console.log(img.width + 'x' + img.height)
+            console.log(img.naturalWidth + 'x' + img.naturalHeight)
+    }
+
+    function imageIsLoaded(e) {
+        $('#myImg').attr('src', e.target.result);
+        $('#yourImage').attr('src', e.target.result);
+       
+    };
+</script>
+
+
+
 
   </div>
 
@@ -169,7 +222,7 @@ Display stands and cases for valuables, artwork, POS, Collectibles, etc.</p>
 
 
               <ul style='text-align:center;color:gray;font-size:50%;'>
-                  <li>Copyright 2020 - Waldmann Enterprises llc</li></ul>
+                  <li>Copyright 2024 - Waldmann Enterprises LLC</li></ul>
 
 
       </div>
@@ -180,7 +233,13 @@ Display stands and cases for valuables, artwork, POS, Collectibles, etc.</p>
   
 
   
-  
+
+
+
+
+<script type="text/javascript" src="/js/services.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+
+
 
   
   <script type="text/javascript" src="/js/scripts.min.8504133605a277da18f0d58cfd2e90d154962f4a961543a6e2f0a459a2d05462.js"></script>
