@@ -133,7 +133,7 @@
     
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
     <div class="row justify-content-start">
-        <div class="col-12 col-md-8">
+        <div class="col-26 col-md-26  mb-2">
             <div class="service service-single">
                 <h1 class="title">Outdoor Carved Signs</h1>
                 <div class="content"><p><img src="../../images/King_ColorCore_outdoor_signs.png" alt="Example image"></p>
@@ -149,9 +149,9 @@
 
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function () { 
+    $(document).ready(function () {
         var base_url = window.location.pathname.split("/")[window.location.pathname.split("/").length-2];
-        
+
         
         if (base_url == 'accounting') {
             $('#accounting').show();
@@ -183,8 +183,8 @@
     });
 
     function myFunction() {
-                            var img = document.getElementById('myImg'); 
-            alert(img.naturalWidth * img.naturalHeight) 
+                            var img = document.getElementById('myImg');
+            alert(img.naturalWidth * img.naturalHeight)
             console.log(img.width + 'x' + img.height)
             console.log(img.naturalWidth + 'x' + img.naturalHeight)
     }
@@ -192,7 +192,7 @@
     function imageIsLoaded(e) {
         $('#myImg').attr('src', e.target.result);
         $('#yourImage').attr('src', e.target.result);
-       
+
     };
 </script>
 
