@@ -14,12 +14,48 @@
   <title>Tags - Waldmann Enterprises</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+
+  
+  
+  <link rel="preload" as="image" href="/images/Waldmann_Enterprises_logo_full.png">
+  
+  
+  <link rel="preload" as="image" href="/images/Waldmann_Enterprises_logo_full.png">
+  
+
   <link rel="icon" href="/favicon-32x32.png">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  
+  <style>
+     
+    img {
+      background: linear-gradient(90deg, #f0f0f0 25%, transparent 37%, #f0f0f0 63%);
+      background-size: 400% 100%;
+    }
+
+    img[style*="opacity: 0"] {
+      animation: shimmer 1.5s ease-in-out infinite;
+    }
+
+    @keyframes shimmer {
+      0% { background-position: 100% 0; }
+      100% { background-position: -100% 0; }
+    }
+
+     
+    img[style*="opacity: 1"] {
+      animation: none;
+      background: none;
+    }
+  </style>
 
   
   
   
-  <link rel="stylesheet" href="/css/style.min.d3d0bf59b5ee786da78a66f503a8f2d5fded341d5474e5472ebd4829fdbbea37.css">
+  <link rel="stylesheet" href="/css/style.min.30443d74a5df4732c320371ccb31561ce8cc2dd96997a4287be4a3690726272e.css">
   
 
   
@@ -73,13 +109,25 @@
   </ul>
 </div>
   <div class="wrapper">
-    <div class='header'>
+    <div class='header modern-header'>
   <div class="container">
     <div class="logo">
-      <a href="https://waldmannenterprises.com/"><img alt="Waldmann Enterprises" src="/images/Waldmann_Enterprises_logo_full.png" /></a>
+      <a href="https://waldmannenterprises.com/"><img alt="Waldmann Enterprises"
+                                          src="/images/Waldmann_Enterprises_logo_full.png"
+                                          loading="eager"
+                                          decoding="async"
+                                          fetchpriority="high"
+                                          onload="this.style.opacity='1'"
+                                          style="opacity: 0; transition: opacity 0.2s ease-in-out;" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="https://waldmannenterprises.com/"><img alt="Waldmann Enterprises" src="/images/Waldmann_Enterprises_logo_full.png" /></a>
+      <a href="https://waldmannenterprises.com/"><img alt="Waldmann Enterprises"
+                                          src="/images/Waldmann_Enterprises_logo_full.png"
+                                          loading="eager"
+                                          decoding="async"
+                                          fetchpriority="high"
+                                          onload="this.style.opacity='1'"
+                                          style="opacity: 0; transition: opacity 0.2s ease-in-out;" /></a>
     </div>
     <div id="" class="main-menu-middle">
   <ul>
@@ -135,6 +183,69 @@
   </div>
 </div>
 
+<style>
+.modern-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.modern-header.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modern-header .container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+ 
+body.modern-page {
+  padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+  body.modern-page {
+    padding-top: 70px;
+  }
+
+  .modern-header .container {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body.modern-page {
+    padding-top: 65px;
+  }
+
+  .modern-header .container {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+</style>
+
+<script>
+
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('.modern-header');
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+</script>
+
     
 <div class="intro">
   <div class="container">
@@ -169,7 +280,7 @@
               
 
               <ul style='text-align:right'>
-                  <li><strong>Email: </strong><a href="mailto:WaldmannEnterprises@gmail.com">WaldmannEnterprises@gmail.com</a></li>
+                  <li><strong>Email: </strong><a href="mailto:JonW@CFLmachine.com">JonW@CFLmachine.com</a></li>
 
               </ul>
             </div>
@@ -186,12 +297,19 @@
 </div>
 
   
+  <button class="fab-button" id="fabButton" title="Quick Contact">
+    <i class="fas fa-comment"></i>
+  </button>
+
+  
+  
 
   
   
 
   
   <script type="text/javascript" src="/js/scripts.min.8504133605a277da18f0d58cfd2e90d154962f4a961543a6e2f0a459a2d05462.js"></script>
+  <script type="text/javascript" src="/js/modern.min.8f81880a3766e51f040ced1af15aeb63028b59beff6a1c31bfe0909d90c72038.js"></script>
   
 
   
@@ -203,6 +321,31 @@
 
   
   <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <script>
+  
+  document.getElementById('fabButton').addEventListener('click', function() {
+    window.location.href = '\/contact\/';
+  });
+
+  
+  let lastScrollTop = 0;
+  window.addEventListener('scroll', function() {
+    const st = window.pageYOffset || document.documentElement.scrollTop;
+    const fab = document.getElementById('fabButton');
+
+    if (st > lastScrollTop && st > 100) {
+      
+      fab.style.transform = 'scale(0.8)';
+      fab.style.opacity = '0.7';
+    } else {
+      
+      fab.style.transform = 'scale(1)';
+      fab.style.opacity = '1';
+    }
+    lastScrollTop = st <= 0 ? 0 : st;
+  });
+  </script>
 </body>
 
 </html>

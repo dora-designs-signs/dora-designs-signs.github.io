@@ -14,21 +14,250 @@
   <title>Services - Waldmann Enterprises</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+
+  
+  
+  <link rel="preload" as="image" href="/images/Waldmann_Enterprises_logo_full.png">
+  
+  
+  <link rel="preload" as="image" href="/images/Waldmann_Enterprises_logo_full.png">
+  
+
   <link rel="icon" href="/favicon-32x32.png">
 
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  
+  <style>
+     
+    img {
+      background: linear-gradient(90deg, #f0f0f0 25%, transparent 37%, #f0f0f0 63%);
+      background-size: 400% 100%;
+    }
+
+    img[style*="opacity: 0"] {
+      animation: shimmer 1.5s ease-in-out infinite;
+    }
+
+    @keyframes shimmer {
+      0% { background-position: 100% 0; }
+      100% { background-position: -100% 0; }
+    }
+
+     
+    img[style*="opacity: 1"] {
+      animation: none;
+      background: none;
+    }
+  </style>
+
   
   
-  <link rel="stylesheet" href="/css/style.min.d3d0bf59b5ee786da78a66f503a8f2d5fded341d5474e5472ebd4829fdbbea37.css">
+  
+  <link rel="stylesheet" href="/css/style.min.30443d74a5df4732c320371ccb31561ce8cc2dd96997a4287be4a3690726272e.css">
   
 
   
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+  .modern-page-header {
+    background: linear-gradient(135deg, #106be0 0%, #0056b3 100%);
+    padding: 120px 0 80px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .modern-page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+    animation: float 8s ease-in-out infinite;
+  }
+
+  .floating-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    animation: float 8s ease-in-out infinite;
+  }
+
+  .shape:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: 15%;
+    animation-delay: 0s;
+  }
+
+  .shape:nth-child(2) {
+    width: 40px;
+    height: 40px;
+    top: 70%;
+    right: 20%;
+    animation-delay: 3s;
+  }
+
+  .shape:nth-child(3) {
+    width: 80px;
+    height: 80px;
+    bottom: 30%;
+    left: 70%;
+    animation-delay: 6s;
+  }
+
+  .page-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1s ease-out;
+  }
+
+  .page-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+    animation: slideInLeft 1s ease-out 0.3s both;
+  }
+
+  .page-description {
+    font-size: 1.3rem;
+    opacity: 0.95;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: slideInLeft 1s ease-out 0.6s both;
+  }
+
+  .services-container {
+    padding: 100px 0;
+    background: #f8f9fc;
+    position: relative;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .service-card-enhanced {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    animation: fadeInUp 0.8s ease-out;
+    position: relative;
+  }
+
+  .service-card-enhanced:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 25px 50px rgba(16, 107, 224, 0.15);
+  }
+
+  .service-card-enhanced::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(45deg, #106be0, #0056b3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .service-card-enhanced:hover::before {
+    opacity: 1;
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .section-title h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+   
+  .services-grid .service-card-enhanced:nth-child(1) { animation-delay: 0.1s; }
+  .services-grid .service-card-enhanced:nth-child(2) { animation-delay: 0.2s; }
+  .services-grid .service-card-enhanced:nth-child(3) { animation-delay: 0.3s; }
+  .services-grid .service-card-enhanced:nth-child(4) { animation-delay: 0.4s; }
+  .services-grid .service-card-enhanced:nth-child(5) { animation-delay: 0.5s; }
+  .services-grid .service-card-enhanced:nth-child(6) { animation-delay: 0.6s; }
+
+  @media (max-width: 768px) {
+    .page-title { font-size: 2.5rem; }
+    .modern-page-header { padding: 100px 0 60px; }
+    .services-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+  }
+</style>
+
 
 
 
 </head>
 
-<body class='page page-services-list'>
+<body class='page page-services-list modern-page'>
   
 
 
@@ -73,13 +302,25 @@
   </ul>
 </div>
   <div class="wrapper">
-    <div class='header'>
+    <div class='header modern-header'>
   <div class="container">
     <div class="logo">
-      <a href="https://waldmannenterprises.com/"><img alt="Waldmann Enterprises" src="/images/Waldmann_Enterprises_logo_full.png" /></a>
+      <a href="https://waldmannenterprises.com/"><img alt="Waldmann Enterprises"
+                                          src="/images/Waldmann_Enterprises_logo_full.png"
+                                          loading="eager"
+                                          decoding="async"
+                                          fetchpriority="high"
+                                          onload="this.style.opacity='1'"
+                                          style="opacity: 0; transition: opacity 0.2s ease-in-out;" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="https://waldmannenterprises.com/"><img alt="Waldmann Enterprises" src="/images/Waldmann_Enterprises_logo_full.png" /></a>
+      <a href="https://waldmannenterprises.com/"><img alt="Waldmann Enterprises"
+                                          src="/images/Waldmann_Enterprises_logo_full.png"
+                                          loading="eager"
+                                          decoding="async"
+                                          fetchpriority="high"
+                                          onload="this.style.opacity='1'"
+                                          style="opacity: 0; transition: opacity 0.2s ease-in-out;" /></a>
     </div>
     <div id="" class="main-menu-middle">
   <ul>
@@ -135,178 +376,1069 @@
   </div>
 </div>
 
-    
-<div class="intro">
-  <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        <h1 id="services">Services</h1>
-<p>We have the equipment and experience to deliver quality products on time and within your budget.</p>
-<p>We can make custom one off&rsquo;s, prototypes or 1000&rsquo;s of the same part. Contact us today for a quote or to discuss your project.</p>
+<style>
+.modern-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
 
-      </div>
-      
-      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative"  style="margin: auto;">
-        <img
-          class="intro-image intro-image-hide-mobile"
-          src="/images/Machine_Laser_CNC.png" />
-      </div>
-      
+.modern-header.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modern-header .container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+ 
+body.modern-page {
+  padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+  body.modern-page {
+    padding-top: 70px;
+  }
+
+  .modern-header .container {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body.modern-page {
+    padding-top: 65px;
+  }
+
+  .modern-header .container {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+</style>
+
+<script>
+
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('.modern-header');
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+</script>
+
+    
+<section class="modern-page-header">
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
     </div>
-  </div>
-</div>
 
-<div class="container pt-2">
-  <div class="row">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <div class="page-content">
+                    <h1 class="page-title">Services</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-container">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Professional Services</h2>
+            <p class="section-subtitle">Comprehensive solutions tailored to meet your business needs</p>
+        </div>
+
+        <div class="services-grid">
+            
+            <div class="service-card-enhanced">
+                <div class="service-modern-card h-100">
     
-    <div class="col-26 col-md-26  mb-2"><div class="service service-summary">
-
-    <div class="service-content" style="align-items: center; align-content: center; text-align: center; max-width: 100%; padding: 2% 2% 2% 2%; vertical-align: center;">
-        <hr>
-        <div class="limiter" style="align-items: center; align-content: center; text-align: center;">
-        <img src=/images/Process_Improvement_Development_CNC_CAD_CAM_Training_Consulting.png style="max-width: 70%; max-height: 400px;">
-        <h2 class="service-title">
+    <div class="service-image-container">
+        <img src="/images/Process_Improvement_Development_CNC_CAD_CAM_Training_Consulting.png"
+             class="service-image"
+             alt="Process Development &amp; Improvement / CNC Training"
+             loading="lazy"
+             decoding="async"
+             onload="this.style.opacity='1'"
+             style="opacity: 0; transition: opacity 0.3s ease-in-out;">
+        <div class="service-overlay">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+    </div>
+    
+    <div class="service-content-modern">
+        <h3 class="service-title-modern">
             <a href="https://waldmannenterprises.com/services/the-process/">Process Development &amp; Improvement / CNC Training</a>
-        </h2>
-
-
-
-        <p>Great things happen when you work SMARTER and HARDER. We help our clients run faster, more parts per cycle, and with less scrap, OR get setup from the ground up.
-Whether you struggle with tooling selection, programming challenging features, long cycle times, inconsistent workholding, or designing for…</p>
-
-
+        </h3>
+        <p class="service-description">Great things happen when you work SMARTER and HARDER. We help our clients run faster, more parts per cycle, and with less scrap, OR get setup from the…</p>
+        <a href="https://waldmannenterprises.com/services/the-process/" class="service-link">
+            Learn More <i class="fas fa-chevron-right ms-1"></i>
+        </a>
     </div>
-    </div>
-</div></div>
-    
-    <div class="col-26 col-md-26  mb-2"><div class="service service-summary">
-
-    <div class="service-content" style="align-items: center; align-content: center; text-align: center; max-width: 100%; padding: 2% 2% 2% 2%; vertical-align: center;">
-        <hr>
-        <div class="limiter" style="align-items: center; align-content: center; text-align: center;">
-        <img src=/images/Design_CAD_CAM_ENGINEERING_3D_MODELING.png style="max-width: 70%; max-height: 400px;">
-        <h2 class="service-title">
-            <a href="https://waldmannenterprises.com/services/product-design/">Product Design &amp; CAD/CAM</a>
-        </h2>
-
-
-
-        <p>We design and program! from your idea, napkin sketch, broken parts, legacy blueprints or CAD files. We can also provide remote or on-site CAM programming solutions.
-Already have a design? We can improve designs to lower manufacturing costs.
-Unlike many design houses, we have much more than just CAD…</p>
-
-
-    </div>
-    </div>
-</div></div>
-    
-    <div class="col-26 col-md-26  mb-2"><div class="service service-summary">
-
-    <div class="service-content" style="align-items: center; align-content: center; text-align: center; max-width: 100%; padding: 2% 2% 2% 2%; vertical-align: center;">
-        <hr>
-        <div class="limiter" style="align-items: center; align-content: center; text-align: center;">
-        <img src=/images/Machining_Milling_CNC.png style="max-width: 70%; max-height: 400px;">
-        <h2 class="service-title">
-            <a href="https://waldmannenterprises.com/services/cnc-machining/">CNC Machining</a>
-        </h2>
-
-
-
-        <p>We offer customer-oriented, precision parts, fast!
-We can cut metal, plastic and composites to your specification. Milling is our specialty; 1 part or 1000’s, prototypes or blanket PO production.
-Don’t have models or drawings? We can assist in development. Contact us today.
-</p>
-
-
-    </div>
-    </div>
-</div></div>
-    
-    <div class="col-26 col-md-26  mb-2"><div class="service service-summary">
-
-    <div class="service-content" style="align-items: center; align-content: center; text-align: center; max-width: 100%; padding: 2% 2% 2% 2%; vertical-align: center;">
-        <hr>
-        <div class="limiter" style="align-items: center; align-content: center; text-align: center;">
-        <img src=/images/Laser_cutting_engraving_3.png style="max-width: 70%; max-height: 400px;">
-        <h2 class="service-title">
-            <a href="https://waldmannenterprises.com/services/cnc-laser/">Laser Cutting / Engraving</a>
-        </h2>
-
-
-
-        <p>We can laser cut your design, artwork or product!
-What can we cut? The material type determines what laser will be required to cut your part. We have both fiber &amp; CO2 lasers to cut nearly all materials - if it can be cut, we can cut it!
- Plastics (Acrylic, Polycarbonate, ABS, Delrin, HDPE, PVC, Starboard,…</p>
-
-
-    </div>
-    </div>
-</div></div>
-    
-    <div class="col-26 col-md-26  mb-2"><div class="service service-summary">
-
-    <div class="service-content" style="align-items: center; align-content: center; text-align: center; max-width: 100%; padding: 2% 2% 2% 2%; vertical-align: center;">
-        <hr>
-        <div class="limiter" style="align-items: center; align-content: center; text-align: center;">
-        <img src=/images/3D_Printing_Rapid_Prototyping.png style="max-width: 70%; max-height: 400px;">
-        <h2 class="service-title">
-            <a href="https://waldmannenterprises.com/services/3d-printing-rapid-prototyping/">3D Printing &amp; Rapid Prototyping</a>
-        </h2>
-
-
-
-        <p>We can have parts in your hands FAST!
-Revisions of your product can be iterated quickly, with low cost filaments until a final design is achieved.
-Then, depending on the application, prototypes can be printed in one several material types such as ABS, Nylon or Carbon Fiber reinforced filaments; OR we can…</p>
-
-
-    </div>
-    </div>
-</div></div>
-    
-    <div class="col-26 col-md-26  mb-2"><div class="service service-summary">
-
-    <div class="service-content" style="align-items: center; align-content: center; text-align: center; max-width: 100%; padding: 2% 2% 2% 2%; vertical-align: center;">
-        <hr>
-        <div class="limiter" style="align-items: center; align-content: center; text-align: center;">
-        <img src=/images/CNC_ROUTING.png style="max-width: 70%; max-height: 400px;">
-        <h2 class="service-title">
-            <a href="https://waldmannenterprises.com/services/cnc-routing/">CNC Routing</a>
-        </h2>
-
-
-
-        <p>Similar to machining, our advanced CNC router can handle complex geometries, but on a much larger scale or give the ability to nest many shapes in one setup to reduce overall costs. This process can handle dusty composites, fiberglass, plastics, or woods that one not suited for machining centers.
-Don’t…</p>
-
-
-    </div>
-    </div>
-</div></div>
-    
-    <div class="col-26 col-md-26  mb-2"><div class="service service-summary">
-
-    <div class="service-content" style="align-items: center; align-content: center; text-align: center; max-width: 100%; padding: 2% 2% 2% 2%; vertical-align: center;">
-        <hr>
-        <div class="limiter" style="align-items: center; align-content: center; text-align: center;">
-        <img src=/images/Sheet_and_Panel_CNC_cutting_routing.png style="max-width: 70%; max-height: 400px;">
-        <h2 class="service-title">
-            <a href="https://waldmannenterprises.com/services/sheet-and-panel-cutting/">Sheet and Panel Cutting</a>
-        </h2>
-
-
-
-        <p>We can turn a pallet of sheet material into shapes or kitted bundles and deliver it to your door. Wood, Plastics, Composites, Metal. Simple shapes or complex geometries.
-Don’t have models, drawings or DXFs? We can help you develop those. Email us today.
-</p>
-
-
-    </div>
-    </div>
-</div></div>
-    
-  </div>
 </div>
+
+<style>
+.service-modern-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.service-modern-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.service-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+}
+
+.service-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .service-image-container {
+        height: 240px;
+        min-height: 240px;
+    }
+}
+
+.service-modern-card:hover .service-image {
+    transform: scale(1.05);
+}
+
+.service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(16, 107, 224, 0.8), rgba(0, 86, 179, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-modern-card:hover .service-overlay {
+    opacity: 1;
+}
+
+.service-overlay i {
+    color: white;
+    font-size: 2rem;
+}
+
+.service-content-modern {
+    padding: 1.5rem;
+}
+
+.service-title-modern {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.service-title-modern a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.service-title-modern a:hover {
+    color: #106be0;
+}
+
+.service-description {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.service-link {
+    color: #106be0;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.service-link:hover {
+    color: #0056b3;
+    transform: translateX(5px);
+}
+</style>
+            </div>
+            
+            <div class="service-card-enhanced">
+                <div class="service-modern-card h-100">
+    
+    <div class="service-image-container">
+        <img src="/images/Design_CAD_CAM_ENGINEERING_3D_MODELING.png"
+             class="service-image"
+             alt="Product Design &amp; CAD/CAM"
+             loading="lazy"
+             decoding="async"
+             onload="this.style.opacity='1'"
+             style="opacity: 0; transition: opacity 0.3s ease-in-out;">
+        <div class="service-overlay">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+    </div>
+    
+    <div class="service-content-modern">
+        <h3 class="service-title-modern">
+            <a href="https://waldmannenterprises.com/services/product-design/">Product Design &amp; CAD/CAM</a>
+        </h3>
+        <p class="service-description">We design and program! from your idea, napkin sketch, broken parts, legacy blueprints or CAD files. We can also provide remote or on-site CAM…</p>
+        <a href="https://waldmannenterprises.com/services/product-design/" class="service-link">
+            Learn More <i class="fas fa-chevron-right ms-1"></i>
+        </a>
+    </div>
+</div>
+
+<style>
+.service-modern-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.service-modern-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.service-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+}
+
+.service-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .service-image-container {
+        height: 240px;
+        min-height: 240px;
+    }
+}
+
+.service-modern-card:hover .service-image {
+    transform: scale(1.05);
+}
+
+.service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(16, 107, 224, 0.8), rgba(0, 86, 179, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-modern-card:hover .service-overlay {
+    opacity: 1;
+}
+
+.service-overlay i {
+    color: white;
+    font-size: 2rem;
+}
+
+.service-content-modern {
+    padding: 1.5rem;
+}
+
+.service-title-modern {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.service-title-modern a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.service-title-modern a:hover {
+    color: #106be0;
+}
+
+.service-description {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.service-link {
+    color: #106be0;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.service-link:hover {
+    color: #0056b3;
+    transform: translateX(5px);
+}
+</style>
+            </div>
+            
+            <div class="service-card-enhanced">
+                <div class="service-modern-card h-100">
+    
+    <div class="service-image-container">
+        <img src="/images/Machining_Milling_CNC.png"
+             class="service-image"
+             alt="CNC Machining"
+             loading="lazy"
+             decoding="async"
+             onload="this.style.opacity='1'"
+             style="opacity: 0; transition: opacity 0.3s ease-in-out;">
+        <div class="service-overlay">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+    </div>
+    
+    <div class="service-content-modern">
+        <h3 class="service-title-modern">
+            <a href="https://waldmannenterprises.com/services/cnc-machining/">CNC Machining</a>
+        </h3>
+        <p class="service-description">We offer customer-oriented, precision parts, fast!
+We can cut metal, plastic and composites to your specification. Milling is our specialty; 1 part or…</p>
+        <a href="https://waldmannenterprises.com/services/cnc-machining/" class="service-link">
+            Learn More <i class="fas fa-chevron-right ms-1"></i>
+        </a>
+    </div>
+</div>
+
+<style>
+.service-modern-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.service-modern-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.service-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+}
+
+.service-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .service-image-container {
+        height: 240px;
+        min-height: 240px;
+    }
+}
+
+.service-modern-card:hover .service-image {
+    transform: scale(1.05);
+}
+
+.service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(16, 107, 224, 0.8), rgba(0, 86, 179, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-modern-card:hover .service-overlay {
+    opacity: 1;
+}
+
+.service-overlay i {
+    color: white;
+    font-size: 2rem;
+}
+
+.service-content-modern {
+    padding: 1.5rem;
+}
+
+.service-title-modern {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.service-title-modern a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.service-title-modern a:hover {
+    color: #106be0;
+}
+
+.service-description {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.service-link {
+    color: #106be0;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.service-link:hover {
+    color: #0056b3;
+    transform: translateX(5px);
+}
+</style>
+            </div>
+            
+            <div class="service-card-enhanced">
+                <div class="service-modern-card h-100">
+    
+    <div class="service-image-container">
+        <img src="/images/Laser_cutting_engraving_3.png"
+             class="service-image"
+             alt="Laser Cutting / Engraving"
+             loading="lazy"
+             decoding="async"
+             onload="this.style.opacity='1'"
+             style="opacity: 0; transition: opacity 0.3s ease-in-out;">
+        <div class="service-overlay">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+    </div>
+    
+    <div class="service-content-modern">
+        <h3 class="service-title-modern">
+            <a href="https://waldmannenterprises.com/services/cnc-laser/">Laser Cutting / Engraving</a>
+        </h3>
+        <p class="service-description">We can laser cut your design, artwork or product!
+What can we cut? The material type determines what laser will be required to cut your part. We have…</p>
+        <a href="https://waldmannenterprises.com/services/cnc-laser/" class="service-link">
+            Learn More <i class="fas fa-chevron-right ms-1"></i>
+        </a>
+    </div>
+</div>
+
+<style>
+.service-modern-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.service-modern-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.service-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+}
+
+.service-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .service-image-container {
+        height: 240px;
+        min-height: 240px;
+    }
+}
+
+.service-modern-card:hover .service-image {
+    transform: scale(1.05);
+}
+
+.service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(16, 107, 224, 0.8), rgba(0, 86, 179, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-modern-card:hover .service-overlay {
+    opacity: 1;
+}
+
+.service-overlay i {
+    color: white;
+    font-size: 2rem;
+}
+
+.service-content-modern {
+    padding: 1.5rem;
+}
+
+.service-title-modern {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.service-title-modern a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.service-title-modern a:hover {
+    color: #106be0;
+}
+
+.service-description {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.service-link {
+    color: #106be0;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.service-link:hover {
+    color: #0056b3;
+    transform: translateX(5px);
+}
+</style>
+            </div>
+            
+            <div class="service-card-enhanced">
+                <div class="service-modern-card h-100">
+    
+    <div class="service-image-container">
+        <img src="/images/3D_Printing_Rapid_Prototyping.png"
+             class="service-image"
+             alt="3D Printing &amp; Rapid Prototyping"
+             loading="lazy"
+             decoding="async"
+             onload="this.style.opacity='1'"
+             style="opacity: 0; transition: opacity 0.3s ease-in-out;">
+        <div class="service-overlay">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+    </div>
+    
+    <div class="service-content-modern">
+        <h3 class="service-title-modern">
+            <a href="https://waldmannenterprises.com/services/3d-printing-rapid-prototyping/">3D Printing &amp; Rapid Prototyping</a>
+        </h3>
+        <p class="service-description">We can have parts in your hands FAST!
+Revisions of your product can be iterated quickly, with low cost filaments until a final design is achieved.…</p>
+        <a href="https://waldmannenterprises.com/services/3d-printing-rapid-prototyping/" class="service-link">
+            Learn More <i class="fas fa-chevron-right ms-1"></i>
+        </a>
+    </div>
+</div>
+
+<style>
+.service-modern-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.service-modern-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.service-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+}
+
+.service-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .service-image-container {
+        height: 240px;
+        min-height: 240px;
+    }
+}
+
+.service-modern-card:hover .service-image {
+    transform: scale(1.05);
+}
+
+.service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(16, 107, 224, 0.8), rgba(0, 86, 179, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-modern-card:hover .service-overlay {
+    opacity: 1;
+}
+
+.service-overlay i {
+    color: white;
+    font-size: 2rem;
+}
+
+.service-content-modern {
+    padding: 1.5rem;
+}
+
+.service-title-modern {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.service-title-modern a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.service-title-modern a:hover {
+    color: #106be0;
+}
+
+.service-description {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.service-link {
+    color: #106be0;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.service-link:hover {
+    color: #0056b3;
+    transform: translateX(5px);
+}
+</style>
+            </div>
+            
+            <div class="service-card-enhanced">
+                <div class="service-modern-card h-100">
+    
+    <div class="service-image-container">
+        <img src="/images/CNC_ROUTING.png"
+             class="service-image"
+             alt="CNC Routing"
+             loading="lazy"
+             decoding="async"
+             onload="this.style.opacity='1'"
+             style="opacity: 0; transition: opacity 0.3s ease-in-out;">
+        <div class="service-overlay">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+    </div>
+    
+    <div class="service-content-modern">
+        <h3 class="service-title-modern">
+            <a href="https://waldmannenterprises.com/services/cnc-routing/">CNC Routing</a>
+        </h3>
+        <p class="service-description">Similar to machining, our advanced CNC router can handle complex geometries, but on a much larger scale or give the ability to nest many shapes in one…</p>
+        <a href="https://waldmannenterprises.com/services/cnc-routing/" class="service-link">
+            Learn More <i class="fas fa-chevron-right ms-1"></i>
+        </a>
+    </div>
+</div>
+
+<style>
+.service-modern-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.service-modern-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.service-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+}
+
+.service-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .service-image-container {
+        height: 240px;
+        min-height: 240px;
+    }
+}
+
+.service-modern-card:hover .service-image {
+    transform: scale(1.05);
+}
+
+.service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(16, 107, 224, 0.8), rgba(0, 86, 179, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-modern-card:hover .service-overlay {
+    opacity: 1;
+}
+
+.service-overlay i {
+    color: white;
+    font-size: 2rem;
+}
+
+.service-content-modern {
+    padding: 1.5rem;
+}
+
+.service-title-modern {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.service-title-modern a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.service-title-modern a:hover {
+    color: #106be0;
+}
+
+.service-description {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.service-link {
+    color: #106be0;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.service-link:hover {
+    color: #0056b3;
+    transform: translateX(5px);
+}
+</style>
+            </div>
+            
+            <div class="service-card-enhanced">
+                <div class="service-modern-card h-100">
+    
+    <div class="service-image-container">
+        <img src="/images/Sheet_and_Panel_CNC_cutting_routing.png"
+             class="service-image"
+             alt="Sheet and Panel Cutting"
+             loading="lazy"
+             decoding="async"
+             onload="this.style.opacity='1'"
+             style="opacity: 0; transition: opacity 0.3s ease-in-out;">
+        <div class="service-overlay">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+    </div>
+    
+    <div class="service-content-modern">
+        <h3 class="service-title-modern">
+            <a href="https://waldmannenterprises.com/services/sheet-and-panel-cutting/">Sheet and Panel Cutting</a>
+        </h3>
+        <p class="service-description">We can turn a pallet of sheet material into shapes or kitted bundles and deliver it to your door. Wood, Plastics, Composites, Metal. Simple shapes or…</p>
+        <a href="https://waldmannenterprises.com/services/sheet-and-panel-cutting/" class="service-link">
+            Learn More <i class="fas fa-chevron-right ms-1"></i>
+        </a>
+    </div>
+</div>
+
+<style>
+.service-modern-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.service-modern-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.service-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+}
+
+.service-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .service-image-container {
+        height: 240px;
+        min-height: 240px;
+    }
+}
+
+.service-modern-card:hover .service-image {
+    transform: scale(1.05);
+}
+
+.service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(16, 107, 224, 0.8), rgba(0, 86, 179, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-modern-card:hover .service-overlay {
+    opacity: 1;
+}
+
+.service-overlay i {
+    color: white;
+    font-size: 2rem;
+}
+
+.service-content-modern {
+    padding: 1.5rem;
+}
+
+.service-title-modern {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.service-title-modern a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.service-title-modern a:hover {
+    color: #106be0;
+}
+
+.service-description {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.service-link {
+    color: #106be0;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.service-link:hover {
+    color: #0056b3;
+    transform: translateX(5px);
+}
+</style>
+            </div>
+            
+        </div>
+    </div>
+</section>
 
   </div>
 
@@ -324,7 +1456,7 @@ Don’t have models, drawings or DXFs? We can help you develop those. Email us t
               
 
               <ul style='text-align:right'>
-                  <li><strong>Email: </strong><a href="mailto:WaldmannEnterprises@gmail.com">WaldmannEnterprises@gmail.com</a></li>
+                  <li><strong>Email: </strong><a href="mailto:JonW@CFLmachine.com">JonW@CFLmachine.com</a></li>
 
               </ul>
             </div>
@@ -341,12 +1473,19 @@ Don’t have models, drawings or DXFs? We can help you develop those. Email us t
 </div>
 
   
+  <button class="fab-button" id="fabButton" title="Quick Contact">
+    <i class="fas fa-comment"></i>
+  </button>
+
+  
+  
 
   
   
 
   
   <script type="text/javascript" src="/js/scripts.min.8504133605a277da18f0d58cfd2e90d154962f4a961543a6e2f0a459a2d05462.js"></script>
+  <script type="text/javascript" src="/js/modern.min.8f81880a3766e51f040ced1af15aeb63028b59beff6a1c31bfe0909d90c72038.js"></script>
   
 
   
@@ -358,6 +1497,31 @@ Don’t have models, drawings or DXFs? We can help you develop those. Email us t
 
   
   <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <script>
+  
+  document.getElementById('fabButton').addEventListener('click', function() {
+    window.location.href = '\/contact\/';
+  });
+
+  
+  let lastScrollTop = 0;
+  window.addEventListener('scroll', function() {
+    const st = window.pageYOffset || document.documentElement.scrollTop;
+    const fab = document.getElementById('fabButton');
+
+    if (st > lastScrollTop && st > 100) {
+      
+      fab.style.transform = 'scale(0.8)';
+      fab.style.opacity = '0.7';
+    } else {
+      
+      fab.style.transform = 'scale(1)';
+      fab.style.opacity = '1';
+    }
+    lastScrollTop = st <= 0 ? 0 : st;
+  });
+  </script>
 </body>
 
 </html>
